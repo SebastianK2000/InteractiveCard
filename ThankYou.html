@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive card details form</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+    }
+
+    body {
+      position: relative;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .backg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img1 {
+      height: auto;
+      position: relative;
+    }
+
+    .card2 {
+      position: absolute;
+      top: -60px;
+      left: -450px;
+    }
+
+    .card1 {
+      position: absolute;
+      top: -350px;
+      left: -600px;
+    }
+
+    .fullname, .datecard, .cvccard, .cardnumber {
+      position: absolute;
+      font-size: 30px;
+      font-family: Space Grotesk;      color: white;
+      z-index: 1;
+    }
+
+    .cvccard {
+      font-size: 20px;
+      left: -100px;
+      top: 46px;
+    }
+
+    .fullname {
+      left: -580px;
+      top: -150px;
+      font-size: 15px;
+    }
+
+    .datecard {
+      position: absolute;
+      font-size: 15px;
+      left: -220px;
+      top: -150px;
+    }
+
+    .cardnumber {
+      position: absolute;
+      font-size: 30px;
+      left: -550px;
+      top: -210px;
+   }
+
+   .logo {
+      position: absolute;
+      top: -320px;
+      left: -550px;
+    }
+
+    .btn {
+    position: absolute;
+    top: 500px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(63, 5, 63);
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+  }
+
+  .thanky {
+    position: absolute;
+    top: 220px;
+    left: 72.5%;
+  }
+
+  .thank {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  left: 75%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: rgb(63, 5, 63);
+  font-family: Space Grotesk;}
+
+.subtext {
+  font-size: 18px;
+  color: rgba(63, 5, 63, 0.7);
+  margin-top: 10px;
+  position: absolute;
+  top: 390px;
+  left: 68%;
+}
+  
+  </style>
+</head>
+
+<body>
+  <img class="img1" src="./images/view1.png" alt="background">
+  <main>
+      <div class="backg">
+        <p class="cardnumber">0000 0000 0000 0000</p>
+        <p class="fullname">Jane Appleseed</p>
+        <p class=""></p>
+        <p class="datecard">00/00</p>
+        <p class="cvccard">000</p> 
+          <img class="card1" src="images/card-front.png" >
+          <img class="card2" src="images/card-back.png" >
+          <img class="logo" src="images/card-logo.svg" />
+      </div>
+
+  </main>
+
+  <section>
+    <div>
+      <img class="thanky" src="images/icon-complete.svg" />
+      <p class="thank">Thank you!<br></p><p class="subtext">We've added your card details<br></p>
+      <button type="submit" class="btn">Continue</button>
+    </div>
+  </section>  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sebastian Kościółek</a>.
+  </div>
+</body>
+</html>
