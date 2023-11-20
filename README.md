@@ -17,9 +17,10 @@ This is a simple interactive card details form. The form provides a visually app
 * HTML
 * CSS
 * JavaScript
-* 
-Clone the repository:
-```bash
+
+
+## Clone the repository:
+bash
 git clone https://github.com/[YourUsername]/Interactive-Card-Details-Form.git
 Open the index.html file in a web browser to view the interactive card details form.
 
