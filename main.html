@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Interactive card details form</title>
 
@@ -67,21 +65,21 @@
     }
 
     .date {
-  display: flex;
-}
+      display: flex;
+    }
 
-.date-input {
-  margin: 5px;
-  padding: 10px;
-  width: 100px;
-  height: 20px;
-  border-radius: 10px;
-  color: black;
-  font-size: 20px;
-  border: 1px solid rgb(63, 5, 63);
-}
+    .date-input, .date-input2 {
+      margin: 5px;
+      padding: 10px;
+      width: 100px;
+      height: 20px;
+      border-radius: 10px;
+      color: black;
+      font-size: 20px;
+      border: 1px solid rgb(63, 5, 63);
+    }
 
-    .fullname, .datecard, .cvccard, .cardnumber {
+    .fullname, .datecard, .cvccard, .cardnumber, .datecard2 {
       position: absolute;
       font-size: 30px;
       font-family: Space Grotesk;
@@ -102,10 +100,16 @@
     }
 
     .datecard {
-      position: absolute;
       font-size: 15px;
       left: -220px;
       top: -150px;
+    }
+
+    .datecard2 {
+      font-size: 15px;
+      left: -200px;
+      top: -150px;
+      z-index: 1;
     }
 
     .cardnumber {
@@ -163,8 +167,8 @@
       <div class="backg">
         <p class="cardnumber">0000 0000 0000 0000</p>
         <p class="fullname">Jane Appleseed</p>
-        <p class=""></p>
         <p class="datecard">00/00</p>
+        <p class="datecard2"></p>
         <p class="cvccard">000</p> 
           <img class="card1" src="images/card-front.png" >
           <img class="card2" src="images/card-back.png" >
@@ -187,7 +191,7 @@
           <p class="exp-date">
             Exp. Date<br>
             <input name="month" type="text" class="date-input" placeholder="MM" />
-            <input name="year" type="text" class="date-input" placeholder="YY" />
+            <input name="year" type="text" class="date-input2" placeholder="YY" />
 
         </div>
         
